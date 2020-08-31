@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/*
+
+ */
+
 func knapsack1(w, v []int, total int) int {
 	lens := len(w)
 	if lens == 0 {
