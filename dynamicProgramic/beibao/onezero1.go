@@ -54,6 +54,6 @@ func max1(a, b int) int {
 }
 
 func main() {
-	ret := knapsack()
+	ret := knapsack() 
 	fmt.Println(ret)
 }
