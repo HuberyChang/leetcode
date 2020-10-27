@@ -7,7 +7,7 @@ import "fmt"
 
 	# 0 < k && k * w[i] <= j &&  k <= num[i]
 	dp[i][j] = max(dp[i-1][j-k*w[i]] + k*v[i], dp[i-1][j])
-	dp[i][j]：表示前i件物品的在体积为j时的最大价值
+	dp[i][j]：表示前i件物品的在体积为j时的最大价值 
 */
 
 const M = 1000
