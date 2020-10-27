@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func merge_sort(l []int, low, high int) []int {
+func mergeSort(l []int, low, high int) []int {
 	if low >= high {
 		return nil
 	}
 	mid := (low + high) >> 1
-	merge_sort(l, low, mid)
-	merge_sort(l, mid+1, high)
+	mergeSort(l, low, mid)
+	mergeSort(l, mid+1, high)
 	k := 0
 	i, j := low, mid+1
 	tmp := make([]int, len(l))
@@ -47,6 +47,6 @@ func main() {
 	//var m, n int
 	//fmt.Scanf("%d %d\n", &m, &n)
 	ll := []int{2, 3, 1, 5, 4}
-	rete := merge_sort(ll, 0, len(ll)-1)
+	rete := mergeSort(ll, 0, len(ll)-1)
 	fmt.Println(rete)
 }
