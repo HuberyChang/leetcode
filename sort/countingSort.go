@@ -42,7 +42,7 @@ func countingSort(arr []int) []int {
 
 	//4.倒序遍历原始数列，从统计数组找到正确位置，输出到结果数组
 	//变形后的计数数组实际上就是从下标1开始每一位都加上前面的值。加到最后就知道一共有多少人，同时还知道每个元素最终排的位置。然后再倒序输出就是排序
-	//countArray下标是5的元素，值是4，代表小绿的成绩排名位置在第4位。放在sortArray中，下标就要减1，因为下标从0开始
+	//countArray下标是5的元素，值是4，代表小绿的成绩排名位置在第4位。放在sortArray中，下标就要减1，因为下标从0开始 
 	sortArray := make([]int, len(arr))
 	for i := len(arr) - 1; i >= 0; i-- {
 		sortArray[countArray[arr[i]-min]-1] = arr[i]
