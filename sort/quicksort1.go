@@ -30,7 +30,7 @@ func quicks_sort(ss []int, low, high int) []int {
 			break
 		}
 		ss[m] = base
-		quicks_sort(ss, low, m-1)
+		quicks_sort(ss, low, m-1) 
 		quicks_sort(ss, m+1, high)
 	}
 	return ss
