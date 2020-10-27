@@ -28,7 +28,7 @@ func bucketSort(arr []float32) []float32 {
 
 	}
 
-	return arr
+	return arr 
 }
 
 func main() {
