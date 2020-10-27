@@ -15,7 +15,7 @@ import "fmt"
 
 			dp[i] = max(dp[j]+1，dp[k]+1，dp[p]+1，.....)
 			只要满足：
-				nums[i] > nums[j]
+				nums[i] > nums[j] 
 				nums[i] > nums[k]
 				nums[i] > nums[p]
 				....
