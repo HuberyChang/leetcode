@@ -22,7 +22,7 @@ func jiaoji(nums1, nums2 []int) []int {
 
 	res := []int{}
 	num := make(map[int]int, 0)
-	//对num1进行遍历，将元素的值和出现的次数存入map
+	//对num1进行遍历，将元素的值和出现的次数存入map 
 	for _, v1 := range nums1 {
 		num[v1]++
 	}
