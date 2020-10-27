@@ -50,7 +50,7 @@ func heapify(arr []int, i, arrlen int) {
 	if right < arrlen && arr[right] > arr[max] {
 		max = right
 	}
-	if max != i { // 如果下标为i的数本身不是所在子树的最大元素，就交换
+	if max != i { // 如果下标为i的数本身不是所在子树的最大元素，就交换 
 		swap(arr, i, max)
 		heapify(arr, max, arrlen)
 	}
