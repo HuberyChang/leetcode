@@ -27,7 +27,7 @@ func quick_sort(s []int, low, high int) {
 	}
 	// 将基准值移到哨兵相遇点
 	s[high], s[start] = x, s[high]
-	// 递归，左右两侧分别排序
+	// 递归，左右两侧分别排序 
 	quick_sort(s, start, low)
 	quick_sort(s, high+1, end)
 }
