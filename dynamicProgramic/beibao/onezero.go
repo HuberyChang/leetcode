@@ -6,7 +6,7 @@ func onezero(nums [][]int, total int) int {
 	dp := make([][]int, len(nums))
 	//fmt.Printf("%T\n", nums)
 	for i := 0; i < len(nums); i++ {
-		dp[i] = make([]int, total+1)
+		dp[i] = make([]int, total+1) 
 	}
 	for i := nums[0][0]; i < total; i++ {
 		dp[0][i] = nums[0][1]
