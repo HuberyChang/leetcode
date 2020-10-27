@@ -31,5 +31,5 @@ func mingrid(a, b int) int {
 
 func main() {
 	grd := [][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}
-	fmt.Println(minPathSum(grd)) 
+	fmt.Println(minPathSum(grd))
 }
