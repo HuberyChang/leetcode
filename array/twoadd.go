@@ -23,5 +23,5 @@ func twoSum(nums []int, target int) []int {
 func main() {
 	numbers := []int{2, 3, 4, 5, 6, 7}
 	tag := 12
-	fmt.Println(twoSum(numbers, tag))
+	fmt.Println(twoSum(numbers, tag)) 
 }
