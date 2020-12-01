@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 /*
-	dp[n] 表示能到达第 n 阶的方法总数
+	dp[n] 表示能到达第 n 阶的方法总数 
 */
 
 func climbStairs(n int) int {

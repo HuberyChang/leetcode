@@ -114,7 +114,7 @@ func main() {
 	fmt.Println("List length is: ", lList.Length)
 	fmt.Println("元素6在位置：", M.Search(6))
 	fmt.Println("元素100在位置：", M.Search(100))
-	fmt.Println("List is null: ", lList.isNull())
+	fmt.Println("List is null: ", lList.isNull()) 
 
 	M.Delete(2)
 	PrintList(lList)

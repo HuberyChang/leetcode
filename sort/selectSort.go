@@ -17,6 +17,6 @@ func selectSort(arr []int) []int {
 }
 
 func main() {
-	list := []int{3, 2, 5, 7, 9}
+	list := []int{3, 2, 5, 7, 9} 
 	fmt.Println(selectSort(list))
 }

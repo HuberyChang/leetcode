@@ -28,7 +28,7 @@ func maxProfit(prices []int) int {
 		}
 	}
 	return sum
-}
+} 
 
 func main() {
 

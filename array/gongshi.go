@@ -31,6 +31,6 @@ func main() {
 	fmt.Scanln(&Q)
 	fmt.Println("请输入R：")
 	fmt.Scanln(&R)
-	fmt.Printf("结果是：%.2f", sum(Q, R))
+	fmt.Printf("结果是：%.2f", sum(Q, R)) 
 	<-done
 }

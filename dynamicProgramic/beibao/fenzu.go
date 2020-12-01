@@ -21,7 +21,7 @@ func fenzu() int {
 			}
 		}
 	}
-	return ff[q1]
+	return ff[q1] 
 }
 
 func max4(a, b int) int {

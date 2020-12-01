@@ -26,7 +26,7 @@ func radixSort(arr []string, maxlength int) []string { // maxlength是字符串�
 			count[index]++
 		}
 
-		//2.统计数组做变形，后面的元素等于前面的元素之和
+		//2.统计数组做变形，后面的元素等于前面的元素之和 
 		for i := 1; i < len(count); i++ {
 			count[i] = count[i] + count[i-1]
 		}

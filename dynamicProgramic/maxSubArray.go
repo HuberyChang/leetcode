@@ -9,7 +9,7 @@ import "fmt"
 	dp[i] = dp[i-1]+nums[i] , if (dp[i-1] >= 0)
 	dp[i] = nums[i] , if (dp[i-1] < 0)
 	综上：
-		dp[i]=max(nums[i], dp[i−1]+nums[i])
+		dp[i]=max(nums[i], dp[i−1]+nums[i] )
 */
 
 func maxSubArray(nums []int) int {

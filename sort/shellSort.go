@@ -17,7 +17,7 @@ func shellSort(arr []int) []int {
 			for j := i; j > gap-1; j -= gap { // gap最小为1，j的最小值为j=i=gap，也为1，插入排序中j>0,所以此处j>gap-1。
 				// j-=gap 是因为要选相同步长的元素作为子序列，然后执行插排操作
 				fmt.Println(i, "==============", j)
-				//摸得牌比现在（现在的牌已经是排序好的）最大的牌小，就交换
+				//摸得牌比现在（现在的牌已经是排序好的）最大的牌小，就交换 
 				if arr[j] < arr[j-gap] {
 					arr[j], arr[j-gap] = arr[j-gap], arr[j]
 				}

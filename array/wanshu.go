@@ -20,5 +20,5 @@ func main() {
 		fmt.Println("true")
 	} else {
 		fmt.Println("false")
-	}
+	} 
 }

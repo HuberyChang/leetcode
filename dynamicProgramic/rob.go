@@ -11,7 +11,7 @@ import "fmt"
 	递推公式：
 		Sn=max(Sn-1,Sn-2+Hn)
 	偷前n-1间房屋的最高金额或者
-	偷前n-2间房屋的最高金额加第n间房屋的金额
+	偷前n-2间房屋的最高金额加第n间房屋的金额 
 */
 
 func rob(nums []int) int {
