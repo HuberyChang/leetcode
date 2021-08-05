@@ -2,15 +2,14 @@ package main
 
 import "fmt"
 
-func quick_sort(s []int, low, high int) {
+func quickSort(s []int, low, high int) {
 	if low >= high {
 		return
 	}
 	// 设置基准值
 	x := s[low]
 	// 设置哨兵
-	start := low
-	end := high
+	start, end := low, high
 	for low < high {
 		// 从右向左找，找到第一个比基准值小的数
 		for low < high && s[high] >= x {
@@ -27,12 +26,13 @@ func quick_sort(s []int, low, high int) {
 	}
 	// 将基准值移到哨兵相遇点
 	s[high], s[start] = x, s[high]
-	// 递归，左右两侧分别排序 
-	quick_sort(s, start, low)
-	quick_sort(s, high+1, end)
+	// 递归，左右两侧分别排序
+	quickSort(s, start, low)
+	quickSort(s, high+1, end)
 }
 
 func main() {
+	//输入数据
 	//var n int
 	//fmt.Scanf("%d\n", &n)
 	//s := make([]int, n)
@@ -43,8 +43,10 @@ func main() {
 	//for i := 0; i < n; i++ {
 	//	fmt.Printf("%d", s[i])
 	//}
+
+	//指定数据
 	s := []int{4, 1, 7, 3, 5, 2}
 	fmt.Println(s)
-	quick_sort(s, 0, len(s)-1)
+	quickSort(s, 0, len(s)-1)
 	fmt.Println(s)
 }

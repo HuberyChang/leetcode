@@ -45,7 +45,7 @@ func mergeSort(l []int, low, high int) []int {
 
 func main() {
 	//var m, n int
-	//fmt.Scanf("%d %d\n", &m, &n) 
+	//fmt.Scanf("%d %d\n", &m, &n)
 	ll := []int{2, 3, 1, 5, 4}
 	rete := mergeSort(ll, 0, len(ll)-1)
 	fmt.Println(rete)
